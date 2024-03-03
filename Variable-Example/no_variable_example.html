@@ -1,0 +1,36 @@
+<button id="button_B">Press Me</button>
+<h3 id="heading_B"></h3>
+
+<script>
+
+    const buttonB = document.querySelector("#button_B");
+    const headingB = document.querySelector("#heading_B");
+
+    buttonB.onclick = () => {
+        alert(`Hello ${prompt("What is your name?")}, nice to see you`);
+        headingB.textContent = `Welcome ${prompt("What is your name?")}`;
+    }
+
+    let myName;
+    let myAge;
+
+    myName = "Chris";
+
+    function logName() {
+        console.log(myName);
+    }
+
+    logName();
+
+    myName = "Bob";
+
+    let myNameArray = ["Ash", "Bob", "Jim"];
+    let myNumberArray = [10, 15, 40];
+
+    console.log(myNameArray[0]);    // should return 'Chris'
+    console.log(myNumberArray[2]);  // should return 40
+
+    let count;
+
+
+</script>
