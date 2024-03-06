@@ -1,0 +1,19 @@
+
+<p class="output"></p>
+<script>
+
+
+    const list = document.querySelector('.output');
+    list.innerHTML = '';
+    const cities = ['lonDon', 'ManCHESTer', 'BiRmiNGHAM', 'liVERpoOL'];
+
+    for (const city of cities) {
+        // write your code just below here
+
+        const result = city.charAt(0).toUpperCase() + city.substring(1,city.length).toLowerCase();
+        const listItem = document.createElement('li');
+        listItem.textContent = result;
+        list.appendChild(listItem);
+    }
+
+</script>

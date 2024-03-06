@@ -1,0 +1,28 @@
+
+<p class="output"> </p>
+
+
+
+<script>
+// https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods
+
+    const list = document.querySelector(".output");
+    list.innerHTML = '';
+    const greetings = ['Happy Birthday',
+                        'Merry Christmas my love',
+                        'A happy Christmas to all the family',
+                        'You\'re all I want for Christmas',
+                        'Get well soon'];
+
+    for (const greeting of greetings) {
+        //Your conditional test needs to go inside the parenthesis
+        //in the line below, replacing what's currently there
+        if (greeting.includes('Christmas')) {
+            const listItem = document.createElement('li');
+            listItem.textContent = greeting;
+            list.appendChild(listItem);
+
+        }
+    }
+
+</script>
